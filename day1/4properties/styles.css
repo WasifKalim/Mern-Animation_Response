@@ -1,0 +1,86 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    grid-gap: 10px;
+
+
+    /* 
+    JUSTIFY-CONTENT- it works on containers/parents on horizontal axis
+    ALIGN-ITEMS - it works on vertical axis within the content
+    JUSTIFY-ITEMS - it works on horizontal axis within the content
+    ALIGN-CONTENT - it works on containers/parents on vertical axis
+    JUSTIFY-SELF - it works on childs/grids items on horizontal axis
+    ALIGN-SELF - it works on childs/grids items on vertical axis
+
+    
+    /*
+    PLACE-ITEMS - short hand - grid-justify-content and align-content
+    PLACE-SELF- short hand - justify-self and align-self
+     */
+
+    /* Works on horizontal axis */
+    /*justify-content: start;/* starts from top left */
+    /*justify-content: end; /* starts from top right */
+    /*justify-content: center; /* contents are in center*/
+    /*justify-content: space-between; /*  */
+    /*justify-content: space-around; /*  */
+    /*justify-content: space-evenly; /*  */
+
+    /* it sets the items within content on vertical axis*/
+    align-items: start;
+    align-items: end;
+    align-items: baseline;
+    align-items: stretch;
+
+
+    /* vertical Axis */
+    /* align-content: space-around; */
+
+    /* short hand PLACE for container/parent */
+    /* justify-content: center;
+    align-content: center; */
+    /* place-content: center; */ /*short hand */
+
+    /* short hand PLACE for child/within content  */
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center;/* /* short hand */
+
+
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+#box1{
+    /* it shifts to the starting of own content */
+    justify-self: start;
+
+    /* it shifts to the ending of own content */
+    justify-self: end;
+    justify-self: center;
+
+    /* it works on own content in vertical axis */
+    align-self: center;
+
+
+}
+
+/* Justify works on horizontal axis */
+/* align works on vertical axis */
+
+/* IMP- work same in different situation */
+/* flex box-> justify-content and align-items */
+/* grid-> justify-content and align-content */
+
+/* HW- difference between grid and inline-grid */

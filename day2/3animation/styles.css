@@ -1,0 +1,67 @@
+.container{
+    height: 216px;
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+.box{
+    height: 212px;
+    width: 212px;
+
+    border: 2px solid green;
+    background-color: aqua;
+    
+    animation-name: wasif_anime;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:backwards ;
+}
+
+@keyframes wasif_anime {
+    /* 0%{
+        width: 212px;
+        background-color: aqua;
+    }
+    30%{
+        width: 35%;
+        background-color: aquamarine;
+    }
+
+    65%{
+        width: 70%;
+        background-color: blue;
+    }
+
+    100%{
+        width: 100%;
+        background-color: blueviolet;
+
+    } */
+    0%{
+        width: 212px;
+        background-color: orange;
+    }
+    50%{
+        width: 35%;
+        background-color: white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+
+    }
+}
+
+/* 
+@keyframes wasif_anime {
+    from{
+        width: 212px;
+    }
+    to{
+        width: 600px;
+    }
+} */

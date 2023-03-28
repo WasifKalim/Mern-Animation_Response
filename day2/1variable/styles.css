@@ -1,0 +1,21 @@
+:root{
+    /* Global scope */
+    --dark-red:#ad0e26;
+}
+
+.container{
+    border: 1px solid brown;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}
+
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+
+    /* local scope */
+    /* --dark-red:#ad0e26; */
+    
+    color: var(--dark-red);
+}
